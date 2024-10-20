@@ -55,13 +55,16 @@ Desplazamiento en binario: 111000010010
 Politica de reemplazo: 0x0  
 Tiempo: 0.000020 segundos  
 
+Ingrese dirección virtual: s  
+Good bye!
+
 
 Puedes ejecutar el programa directamente en Replit haciendo clic en el siguiente enlace:   
 
 [![Ejecutar en Replit](https://replit.com/badge?caption=Ejecutar%20en%20Replit)](https://replit.com/@keramosl/parcial2)  
 # Créditos  
 Este programa fue realizado por:  
---> tmurilloa  
---> kevinramos2  
+--> <a href="https://github.com/tmurilloa">tmurilloa</a>  
+--> <a href="https://github.com/kevinramos2">kevinramos2</a>  
   
 
