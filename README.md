@@ -1,5 +1,14 @@
 # Simulador-de-TLB-en-C
-Como parte de una actividad evaluativa de la asignatura Sistemas Operativos, se nos pidió realizar desde cero un Translation Lookasida Buffer (TLB). La funcionalidad del programa es traducir una dirección de memoria lógica/virtual a una dirección física; el TLB podrá contener únicamente 5 traducciones. Una vez se supere el límite, las nuevas traducciones que se ingresen serán guardadas pero se aplicará una política de reemplazo FIFO.  
+Como parte de una actividad evaluativa de la asignatura Sistemas Operativos, se nos pidió realizar desde cero un Translation Lookasida Buffer (TLB). La funcionalidad del programa es traducir una dirección de memoria lógica/virtual a una dirección física; el TLB podrá contener únicamente 5 traducciones. Una vez se supere el límite, las nuevas traducciones que se ingresen serán guardadas pero se aplicará una política de reemplazo FIFO. 
+
+# Características del simulador  
+- Traduce direcciones de memoria virtual a direcciones físicas.  
+- Capacidad limitada a **5 traducciones** en el TLB.  
+- Aplicación de la política de reemplazo **FIFO** cuando se supere el límite de traducciones.  
+- Reporte de **TLB Hit** o **TLB Miss** según corresponda.  
+- Muestra detalles como la página y desplazamiento en formatos **decimal y binario**.  
+- Calcula el **tiempo en segundos** que toma cada operación.
+  
 # Instrucciones de ejecución
 El programa leerá de manera indefinida los inputs del usuario hasta que este ingrese una "s", si la entrada es una dirección virtual válida el programa deberá mostrar la siguiente información: 
  - El número de página en decimal y en binario.
