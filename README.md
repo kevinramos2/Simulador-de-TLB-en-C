@@ -10,18 +10,19 @@ Como parte de una actividad evaluativa de la asignatura Sistemas Operativos, se 
 - Calcula el **tiempo en segundos** que toma cada operación.
   
 # Instrucciones de ejecución
-El programa leerá de manera indefinida los inputs del usuario hasta que este ingrese una "s", si la entrada es una dirección virtual válida el programa deberá mostrar la siguiente información: 
- - El número de página en decimal y en binario.
- - Deplazamiento dentro de la página en decimal y en binario.
- - El tiempo en segundos que tomó realizar la operación.
- - Mostrar un TLB Hit en caso que la traducción ya se encuentre dentro del TLB.
- - Mostrar un TLB Miss cuando la dirección ingresada aún no esté en el TLB.
- - En caso de haber política de reemplazo se mostrará la dirección del elemento reemplazado.  
+El programa leerá de manera indefinida los inputs del usuario hasta que este ingrese una "s", si la entrada es una dirección virtual válida el programa deberá mostrar la siguiente información:   
+| Información                  | Descripción                                                                                     |
+|------------------------------|-------------------------------------------------------------------------------------------------|
+| **Página (decimal y binario)** | Número de página correspondiente a la dirección ingresada.                                      |
+| **Desplazamiento**           | Offset dentro de la página, en formatos decimal y binario.                                      |
+| **Tiempo de operación**      | Tiempo que tomó la traducción, medido en segundos.                                              |
+| **Estado del TLB**           | Indica si la traducción fue un **Hit** (ya estaba en el TLB) o un **Miss** (no estaba en el TLB).|
+| **Reemplazo en el TLB**      | Dirección reemplazada, si se aplica la política FIFO.                                           |
+
     
   
-**Este es un ejemplo de uso del programa:** 
-
-  
+### Este es un ejemplo de uso y salida del programa:
+```bash
 Ingrese direccion virtual: 10992  
 TLB desde 0x563cfed532a0 hasta 0x563cfed533bd  
 TLB Miss  
@@ -42,7 +43,7 @@ Desplazamiento en binario: 101011110000
 Politica de reemplazo: 0x0  
 Tiempo: 0.000029 segundos     
   
-**----Más traducciones----**    
+----Más traducciones----  
   
 Ingrese direccion virtual: 19986  
 TLB desde 0x563cfed532a0 hasta 0x563cfed533bd  
@@ -66,7 +67,7 @@ Tiempo: 0.000020 segundos
 
 Ingrese dirección virtual: s  
 Good bye!
-
+```
 
 Puedes ejecutar el programa directamente en Replit haciendo clic en el siguiente enlace:   
 
